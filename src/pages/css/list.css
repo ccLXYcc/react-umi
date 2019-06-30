@@ -1,0 +1,46 @@
+li a{
+  color: #000
+}
+img{
+  float: left;
+  width: 5rem;
+  height: 5rem;
+  margin-top: 1rem;
+  margin-left: 1.5rem;
+}
+.content li{
+  height: 9rem;
+  border-bottom: 0.01rem solid #abc;
+  margin:1rem 0
+}
+li p{
+  width: 8rem;
+  margin-left: 10rem;
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+}
+li span{
+  display: inline-block;
+  width: 7rem;
+  margin-left: 4rem;
+  font-size: 0.9rem;
+  color:deeppink;
+  margin-top:1rem;
+}
+li em{
+  display: inline-block;
+  margin-left: 11rem;
+  font-style: normal
+}
+.navbar{
+  position: fixed;
+  width: 100%;
+  background: rgb(228, 70, 70);
+  color: #Fff;
+}
+.navbar span{
+  color: #Fff;
+}
+.content{
+  padding:2.5rem 0
+}

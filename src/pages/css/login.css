@@ -1,0 +1,18 @@
+.nav{
+  background: rgb(228, 70, 70);
+}
+.nav span{
+  color: #fff
+}
+.content{
+  margin:0.5rem auto;
+  width: 95%;
+}
+
+a{
+  margin:0.5rem;
+  color: #abc
+}
+
+
+

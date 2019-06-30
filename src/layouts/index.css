@@ -1,0 +1,20 @@
+.footer{
+  position: fixed;
+  bottom: 0;
+  height:3rem;
+  width: 100%;
+  background: rgb(228, 70, 70);
+  font-size: 1.1rem;
+}
+.footer li{
+  float: left;
+  list-style: none;
+  width: 25%;
+  text-align: center;
+  line-height:3rem;
+}
+.footer li a{
+  color: rgba(255, 255, 255, 0.7);
+}
+
+

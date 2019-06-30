@@ -1,0 +1,16 @@
+
+html, body, #root {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+}
+
+div,h1,h2,h3,h4,h5,li,ul,dl,dt,dd,div,p{
+  margin:0;
+  padding:0
+}
+a.active{
+  color:#fff !important;
+}

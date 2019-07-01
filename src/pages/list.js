@@ -1,4 +1,4 @@
-import React, { Component } from 'react'
+import React from 'react'
 import { NavBar, Icon } from 'antd-mobile';
 import Link from 'umi/link'
 import styles from './css/list.css'

@@ -54,7 +54,6 @@ class cart extends Component {
     message.error('取消删除');
   }
   allChange (e) {
-    console.log(e.target.checked)
     if (e.target.checked === true) {
       this.setState({
         list: this.state.list.map((item) => {

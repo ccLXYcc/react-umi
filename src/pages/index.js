@@ -10,6 +10,7 @@ class index extends Component {
     this.state = {
       login: '',
       data: ['1', '2', '3'],
+      val: ""
     }
   }
   componentDidMount () {
@@ -30,6 +31,15 @@ class index extends Component {
       });
     }, 100);
   }
+  handlechange (val) {
+    console.log(val)
+
+    this.setState({
+
+    })
+    console.log(this.state)
+  }
+
   render () {
     return (
       <div>
@@ -37,12 +47,12 @@ class index extends Component {
           <Link to={{ pathname: 'login' }}><span className={styles.login}>{this.state.login}</span></Link>
           <div className={styles.seach}>
             <SearchBar
+              onChange={v => { this.handlechange(v) }}
               placeholder="夏天来点冰"
             /></div>
           <WingBlank>
             <Carousel
               infinite
-
             >
               {this.state.data.map(val => (
                 <a

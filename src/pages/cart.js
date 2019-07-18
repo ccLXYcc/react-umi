@@ -76,16 +76,19 @@ class cart extends Component {
     this.setState({
       list: arr
     })
-    if (e.target.checked === true) {
-      this.setState({
-        price: quantity * price
-      })
-    } else if (e.target.checked === false) {
+
+    let sumPrice = 0
+    arr.filter(item => item.checked).forEach(item => {
+      sumPrice += item.quantity * item.product.price
+    })
+    this.setState({
+      price: sumPrice
+    })
+    if (arr.filter(item => item.checked) === false) {
       this.setState({
         price: 0
       })
     }
-    console.log(quantity * price)
   }
   render () {
     const { list, name, price } = this.state
@@ -127,7 +130,7 @@ class cart extends Component {
           </ul>
           <div className={styles.footer}>
             <Checkbox onChange={this.allChange.bind(this)}>全选</Checkbox>
-            <span style={{ marginLeft: '7rem' }}>{'￥'}{price}</span>
+            <span style={{ marginLeft: '5rem' }}>{'￥'}{price}</span>
             <Button type="warning"
               className={styles.btn}
             >结算</Button>
